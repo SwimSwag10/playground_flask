@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    body {
+      background-color: linen;
+    }
+
+    h1 {
+      color: #333;
+      margin: 30px;
+      font-size: 3em;
+    }
+
+    .inline {
+      text-align: center;
+    }
+
+    .blue {
+      width: 150px;
+      height: 150px;
+      background: {{color}};
+      display: inline-block;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="inline">
+    <h1>Welcome!</h1>
+    {% for _ in range(0,num)%}
+      <div class="blue" ></div>
+    {% endfor %}
+  </div>
+</body>
+</html>
